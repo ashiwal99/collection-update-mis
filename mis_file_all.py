@@ -37,9 +37,9 @@ logger.addHandler(console_handler)
 pd.set_option("future.no_silent_downcasting", True)
 
 service_name = "zoho_mail"
-username = "shivam.ashiwal@finnable.com"
+username = "samplemail@finnable.com"
 today_date = datetime.now().strftime("%d-%b-%Y")
-email_address = "shivam.ashiwal@finnable.com"
+email_address = "samplemail@finnable.com"
 smtp_server = "smtppro.zoho.com"
 smtp_port = 465
 
@@ -389,59 +389,16 @@ body_template = """
 
 mail_dict = {
     'Piramal': {
-        'to': ['kunal.sawant@piramal.com'],
-        'cc': ['parminderkaur.dadyala@piramal.com', 'anvay.gaikwad@piramal.com', 'sanjaybabu.swamy@piramal.com', "joachim.rodrigues@piramal.com", "anuj.kadam@piramal.com",
-            "preetha.devi@go-yubi.com", "ranjith.kumar@go-yubi.com", ],
+        'to': [''],
+        'cc': ['' ],
         'name': 'Kunal',
-    },
-    'HDB': {
-        'to': ['hdb.fintechcollxn@hdbfs.com'],
-        'cc': ['amit.jain@hdbfs.com', 'gaurav.gadia@hdbfs.com', 'maurice.dueman@hdbfs.com', 'noida.fintechsupport@hdbfs.com','geeta.goswami@hdbfs.com', 'suman.kumari@finnable.com'],
-        'name': 'Nivetha & Team',
-    },
-    'DMI': {
-        'to': ['sanjay.kumar1@dmifinance.in'],
-        'cc': ['mohammadarif.taqi@dmifinance.in', 'repayments_ops@dmiconsumercredit.in', 'soni.verma-tlp@dmifinance.in'],
-        'name': 'Sanjay',
-    },
-    'Utkarsh': {
-        'to': ['rahul.kakkar@utkarsh.bank', 'jaspal.singh1@utkarsh.bank'],
-        'cc': ['shweta.yadav@utkarsh.bank'],
-        'name': 'Rahul & Jaspal',
-    },
-    'Northern-Arc': {
-        'to': ['Madhumitha.S@NorthernArc.com'],
-        'cc': ['Kiran.Kumar@NorthernArc.com', 'Milan.Vazir@NorthernArc.com'],
-        'name': 'Madhumitha',
-    },
-    'AXIS': {
-        'to': ['Sai.Vaddadi@axisbank.com', 'Laupyam.Pattnaik@axisbank.com'],
-        'cc': ['Vigyat.Bhardwaj@axisbank.com', 'Sasha.Fernandes@axisbank.com'],
-        'name': 'Sai & Team',
-    },
-    'Gosree': {
-        'to': ['akhilesh.tj@gosreefinance.com'],
-        'cc': [''],
-        'name': 'Akhilesh',
-    },
-    'TVS':{
-        'to': ['anser.ashraf@tvscredit.com'],
-        'cc': ['b.dhanasekar@tvscredit.com', 'pavithra@tvscredit.com', 'sudhagiri.m@tvscredit.com', 'dp-biz@tvscredit.com'],
-        'name': 'Anser',  
-    }
+    } # more recepeints can be added later on
 }
     
 universal_cc = ['']
 
 
 list_of_partners = [
-    'HDB',
-    'Piramal',
-    'Utkarsh', 
-    'Northern-Arc', 
-    'AXIS',  
-    'TVS',
-    'DMI',
     # 'Gosree',
     ]
 
